@@ -157,7 +157,7 @@ class Indexer
     public function autoIndex($entity, EntityManager $em)
     {
         $this->em = $em;
-
+        
         if (!$this->discoverEntity($entity, $em)) {
             return false;
         } else {
